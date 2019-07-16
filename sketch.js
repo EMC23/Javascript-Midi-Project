@@ -35,7 +35,11 @@ function setup() {
     );
 }
 function draw(e) {
- ellipse(50, 50, 80, e.value);
-  // put drawing code here
+
+if (typeof e !== 'undefined') {
+ellipse(50, 50, 80, e.value);
+}
+
+
 }
 
