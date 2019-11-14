@@ -7,7 +7,7 @@ function setup() {
           console.log("WebMidi enabled!");
           console.log(WebMidi.inputs);
           //console.log(WebMidi.outputs);
-          var input = WebMidi.inputs[1];
+          var input = WebMidi.inputs[0];
 		  
 			//listen to all incoming "note on" input events
 			input.addListener('noteon', "all",
