@@ -9,7 +9,7 @@ These are
 
 The goal is to 
 
-# a) see the midi controller appear as an input[0] device *this might change depending on your midi controller(s)
+a) see the midi controller appear as an input[0] device *this might change depending on your midi controller(s)
 b) see the midi data as one moves a controller
 c) use this code as a base to add features to the circle that appears when everything is working
 
