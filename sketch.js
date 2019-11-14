@@ -7,25 +7,20 @@ function setup() {
           console.log("WebMidi enabled!");
           console.log(WebMidi.inputs);
           //console.log(WebMidi.outputs);
-          var input = WebMidi.getInputById("input-0");
-          input.addListener('controlchange', "all",
-              function (e) {
-                console.log("Received 'controlchange' message.", e.data[2]);
-              }
-            );
-            // Check for the presence of an event listener (n such cases, you cannot use anonymous functions).
-            function test(e) { 
-              console.log(e);
-             }
-            //  input.addListener('programchange', 12, test);
-            input.addListener('controlchange', "all",function(e) {
-              console.log("value: " + e.value);
-              draw(e);
-            });
-          }
+          var input = WebMidi.inputs[1];
+		  
+			//listen to all incoming "note on" input events
+			input.addListener('noteon', "all",
+			function (e) {
+
+				//Show what we are receiving
+				console.log("Received 'noteon' message (" + e.note.name + e.note.octave + ") "+ e.note.number +".");
+			});
+
         }
-    );
+	});
 }
+
 function draw(e) {
   if (typeof e !== 'undefined') {
     ellipse(50, 50, 80, e.value);
