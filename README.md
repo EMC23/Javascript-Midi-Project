@@ -11,8 +11,8 @@ These are
 
 The goal is to 
 
-- see the midi controller appear as an input[0] device *this might change depending on your midi controller(s)
-- see the midi data as one moves a controller
-- use this code as a base to add features to the circle that appears when everything is working
+1. see the midi controller appear as an input[0] device *this might change depending on your midi controller(s)
+2. see the midi data as one moves a controller
+3. se this code as a base to add features to the circle that appears when everything is working
 
 Visit this branch for [p5-and-particles](https://github.com/EMC23/Javascript-Midi-Project-001/tree/p5-and-particles). This is currently set up for midi using MidiLoop and Ableton. There might need to be adjustments to the code depending on the midi control you choose.
