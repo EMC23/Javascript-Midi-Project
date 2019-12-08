@@ -3,11 +3,11 @@
 This project connects three files together in the index.html file. 
 These are
 
-- P5 the graphical frontend using canvas
-- webmidi conects your midi controller to Google Chrome browser
-- A custom javascsript file that uses the webmidi data values to do something inside the p5 canvas
-  - a.) setup.js Your p5 file that calls in the webmidi data and uses these values to print messages inside the p5 canvas. This file is to help verify everything is working and provide some feedback.
-  - b.) sketch.js Your p5 file that uses the webmidi data values to do something inside the p5 canvas. This is where creativity comes in. *Be sure to change the script in index.html
+1. P5 the graphical frontend using canvas
+2. webmidi conects your midi controller to Google Chrome browser
+3. A custom javascsript file that uses the webmidi data values to do something inside the p5 canvas
+  - setup.js Your p5 file that calls in the webmidi data and uses these values to print messages inside the p5 canvas. This file is to help verify everything is working and provide some feedback.
+  - sketch.js Your p5 file that uses the webmidi data values to do something inside the p5 canvas. This is where creativity comes in. *Be sure to change the script in index.html
 
 The goal is to 
 
