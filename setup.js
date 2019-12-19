@@ -48,17 +48,17 @@ function setup() {
 
         // Attach MIDI event "listeners" to each input
         for (var input of midiAccess.inputs.values()) {
-            input.onmidimessage = getMIDIMessage;
+          input.onmidimessage = getMIDIMessage;
         }
     }
 
     // Function to run when requestMIDIAccess fails
     function onMIDIFailure() {
-        console.log('Error: Could not access MIDI devices.');
+      console.log('Error: Could not access MIDI devices.');
     }
 
     //Choose an input port
-    inputSoftware = WebMidi.inputs[1];
+    inputDevice = WebMidi.inputs[1];
     //The 0 value is the first value in the array
     //Meaning that we are going to use the first MIDI input we see
     //This can be changed to a different number,
@@ -121,7 +121,6 @@ function setup() {
     	console.log('noteOff');
       displayNote="Note off: " + note;
     }
-
 
     function fader(velocity) {
     	console.log('fader');
